@@ -1,6 +1,6 @@
 export function SectionSaveIdea() {
   return (
-    <section className="bg-green-200 h-[calc(100dvh-80px)] flex flex-col-reverse lg:flex-row">
+    <section className="bg-green-200 h-[calc(100dvh-80px)] flex flex-col-reverse md:flex-row">
       <div className="flex-1 flex justify-center items-center">
         <div className="text-center text-green-800 flex flex-col items-center gap-4 p-1">
           <h2 className="text-2xl md:text-6xl font-bold">

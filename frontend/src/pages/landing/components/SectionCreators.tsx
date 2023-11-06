@@ -1,6 +1,6 @@
 export function SectionCreators() {
   return (
-    <section className="bg-red-100 h-[calc(100dvh-80px)] flex flex-col lg:flex-row relative z-10">
+    <section className="bg-red-100 h-[calc(100dvh-80px)] flex flex-col md:flex-row relative z-10">
       <div className="flex-1 relative">
         <img
           className="object-cover h-full"
@@ -25,11 +25,11 @@ export function SectionCreators() {
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center">
-        <div className="max-w-md flex flex-col items-center gap-5 text-center text-red-700">
-          <h2 className="text-6xl font-bold">
+        <div className="max-w-md flex flex-col items-center gap-1 xs:gap-3 lg:gap-5 text-center text-red-700">
+          <h2 className="text-xl xs:text-4xl lg:text-6xl font-bold">
             Miralo, créalo, pruébalo, hazlo
           </h2>
-          <p className="text-2xl">
+          <p className="lg:text-2xl">
             Lo mejor de Pinterest es descubrir cosas e ideas nuevas de personas
             de todo el mundo.
           </p>

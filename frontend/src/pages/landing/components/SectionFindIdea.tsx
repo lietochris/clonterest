@@ -2,11 +2,11 @@ import { SearchIcon } from "../../../components/icons/SearchIcon";
 
 export function SectionFindIdea() {
   return (
-    <section className="bg-yellow-200 h-[calc(100dvh-80px)] flex flex-col lg:flex-row relative z-10">
+    <section className="bg-yellow-200 h-[calc(100dvh-80px)] flex flex-col md:flex-row relative z-10">
       <div className="flex-1 flex justify-center items-center">
         <a
           href="#"
-          className="relative md:w-[537px] md:h-[611px] -mt-5 md:mt-5 w-[80%] h-[325px] max-w-[300px] md:max-w-full"
+          className="relative md:w-[430px] md:h-[611px] -mt-5 md:mt-5 w-[80%] h-[325px] max-w-[300px] md:max-w-full"
         >
           <img
             className="absolute md:top-0 md:right-4 top-[12.5%] right-[10%] w-[87px] md:w-[178px]"
@@ -24,7 +24,7 @@ export function SectionFindIdea() {
             alt=""
           />
           <img
-            className="absolute md:w-72 w-[146px] md:top-[88px] md:left-[148px] top-[25%] left-[25%]"
+            className="absolute md:w-72 w-[146px] md:top-[88px] md:left-[88px] top-[25%] left-[25%]"
             src="/images/landing/center.png"
             alt=""
           />
