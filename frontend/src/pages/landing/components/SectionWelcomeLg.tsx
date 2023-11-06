@@ -3,7 +3,11 @@ import { ChevronDownIcon } from "../../../components/icons/ChevronDownIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInterval } from "usehooks-ts";
 
-export function SectionWelcomeLg() {
+interface Props {
+  className?: string;
+}
+
+export function SectionWelcomeLg(props: Props) {
   const [step, setStep] = useState(0);
 
   useInterval(() => {
@@ -15,7 +19,9 @@ export function SectionWelcomeLg() {
   }, 5000);
 
   return (
-    <section className="h-[calc(100dvh-80px)] flex flex-col z-10">
+    <section
+      className={`h-[calc(100dvh-80px)] flex flex-col z-10 ${props.className}`}
+    >
       <div className="flex-1 flex justify-center items-center">
         <div className="text-6xl text-center flex flex-col font-semibold">
           <h1>Descubre tu próximo</h1>

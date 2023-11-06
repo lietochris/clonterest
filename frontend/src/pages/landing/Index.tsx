@@ -8,7 +8,17 @@ export function Index() {
   return (
     <>
       <header className="py-6 px-4 flex justify-between items-center bg-white fixed w-full h-20 top-0 z-10">
-        <div className="text-red-600 font-bold">Clonterest</div>
+        <nav className="flex gap-5">
+          <div className="text-red-600 font-bold">Clonterest</div>
+          <ul className="flex gap-4 [&>li>a]:flex items-center [&>li>a]:font-medium">
+            <li>
+              <a href="">Hoy</a>
+            </li>
+            <li>
+              <a href="">Explorar</a>
+            </li>
+          </ul>
+        </nav>
         <div className="flex justify-center items-center">
           <nav className="mr-8 hidden md:block">
             <ul className="flex gap-8 [&>li>a]:flex items-center [&>li>a]:font-medium">
