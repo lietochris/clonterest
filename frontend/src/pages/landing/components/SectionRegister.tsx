@@ -2,7 +2,7 @@ import { InformationCircleIcon } from "../../../components/icons/InformationCirc
 
 export function SectionRegister() {
   return (
-    <section className="bg-gray-500 h-[calc(100dvh-80px)] flex flex-col">
+    <section className="bg-gray-500 h-[calc(100dvh-80px)] flex flex-col bg-cover bg-[url('/images/landing/abdulla-faiz.jpg')]">
       <div className="flex-1 flex flex-col md:flex-row">
         <div className="flex-1 flex justify-center items-center">
           <div className="">
