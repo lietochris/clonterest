@@ -1,0 +1,23 @@
+---
+import {Image} from "astro:assets";
+import SearchImage from "./images/search-image.png"
+---
+
+<section class="bg-yellow-200 h-[calc(100dvh-64px)] grid place-items-center">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto p-5 place-items-center">
+        <a href="/public" class="">
+            <Image src={SearchImage} alt="Collage de imagenes sobre comida" class="md:max-w-md xl:max-w-xl"}/>
+        </a>
+        <div class="text-red-700 flex flex-col gap-3 justify-start items-center">
+            <h2 class="font-bold text-4xl lg:text-6xl 2xl:text-7xl text-center">Busca una idea</h2>
+            <p class="text-xl lg:text-xl 2xl:text-2xl text-center">
+                ¿Qué quieres probar ahora? Piensa en algo que te guste, como “receta fácil con pollo”, y ve lo que
+                encuentras.
+            </p>
+            <a href="/public"
+               class="bg-primary hover:bg-red-700 transition-colors px-4 py-2 2xl:px-6 2xl:py-3 rounded-full text-white font-semibold">
+                Explorar
+            </a>
+        </div>
+    </div>
+</section>
