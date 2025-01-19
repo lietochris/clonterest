@@ -1,11 +1,17 @@
 ---
-
+import { Image } from "astro:assets";
+import Favorites from "./images/favorites.png";
+import Button from "../../../shared/ui/button/Button.astro";
 ---
-<section class="bg-teal-100 h-screen grid place-items-center">
-    <div class="grid grid-cols-2">
-        <div class="text-teal-800">
-            <h2 class="font-bold text-6xl">Guarda las ideas que te gusten</h2>
-            <p class="text-2xl">Recopila tus favoritos para volver a verlos después.</p>
-        </div>
+<section class="bg-teal-100 h-screen flex justify-center items-center">
+  <div class="container px-5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center">
+    <div class="text-teal-800 text-center flex flex-col justify-start items-center gap-4 order-2 lg:order-1">
+      <h2 class="font-bold text-3xl lg:text-6xl max-w-lg">Guarda las ideas que te gusten</h2>
+      <p class="text-lg lg:text-2xl max-w-sm">Recopila tus favoritos para volver a verlos después.</p>
+      <Button href="#">Explorar</Button>
     </div>
+    <div class="order-1 lg:order-2">
+      <Image class="w-full max-w-xs md:max-w-md xl:max-w-lg mx-auto" src={Favorites} alt="collage" />
+    </div>
+  </div>
 </section>

@@ -1,5 +1,22 @@
 ---
-
+import Button from "../../../shared/ui/button/Button.astro";
+import { Image } from "astro:assets";
+import Influencer from "./images/influencer.png";
+import Mobile from "./images/mobile.png";
 ---
 
-<section class="h-screen bg-red-100">explore</section>
+<section class="h-screen bg-red-100 grid grid-cols-1 lg:grid-cols-2 place-items-center">
+  <div class="relative flex justify-center items-center">
+    <Image class="lg:h-screen w-full object-cover object-top lg:object-center" src={Influencer} alt="Influencer" />
+    <Image class="hidden md:block absolute bottom-16 left-16 w-full max-w-[15rem] xl:max-w-[18rem] rounded-3xl" src={Mobile}
+           alt="influencer story" />
+  </div>
+  <div class="flex flex-col gap-2 justify-center items-center p-5">
+    <h2 class="text-rose-700 font-bold text-4xl lg:text-6xl text-center max-w-[26rem]">Míralo, créalo, pruébalo,
+      hazlo</h2>
+    <p class="text-rose-700 text-xl lg:text-2xl text-center">
+      Lo mejor de Pinterest es descubrir cosas e ideas nuevas de personas de todo el mundo.
+    </p>
+    <Button href="#">Explorar</Button>
+  </div>
+</section>
