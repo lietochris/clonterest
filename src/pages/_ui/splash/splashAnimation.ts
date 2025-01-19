@@ -23,7 +23,7 @@ function animateCollage(collage: Element) {
     timeline.fromTo(
       items,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.5, stagger: 0.5, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 0.5, stagger: 0.4, ease: "power3.out" }
     );
     timeline.to(items, { delay: 2 });
     timeline.to(items, { opacity: 0 });

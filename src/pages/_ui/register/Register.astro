@@ -1,5 +1,58 @@
 ---
-
+import Button from "../../../shared/ui/button/Button.astro";
+import GoogleIcon from "./GoogleIcon.astro";
 ---
 
-<section class="h-screen">register</section>
+<section class="min-h-screen pt-16 bg-gray-500 relative flex flex-col justify-between">
+  <div class="container px-5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 place-items-center">
+    <div class="mt-5">
+      <h2 class="text-white text-5xl lg:text-7xl text-center lg:text-left font-semibold">Registrate para ver tus ideas</h2>
+    </div>
+    <div class="">
+      <div class="bg-white max-w-[31rem] rounded-3xl mt-2">
+        <div class="header text-center px-5 pt-8 pb-2 flex flex-col gap-3 justify-center items-center">
+          <span class="size-8 rounded-full text-white bg-primary grid place-items-center font-semibold text-xl">C</span>
+          <h2 class="font-semibold text-3xl">Te damos la bienvenida a Clonterest</h2>
+          <p class="max-w-[18rem] font-medium">Encuentra nuevas ideas para experimentar</p>
+        </div>
+        <div class="content px-5">
+          <form class="flex flex-col gap-1 max-w-[18rem] mx-auto justify-center items-center">
+            <fieldset class="w-full flex flex-col">
+              <label class="text-sm font-semibold mb-1 text-gray-500" for="email">Correo electrónico</label>
+              <input class="w-full border-2 border-gray-300 rounded-xl p-3" id="email"
+                     placeholder="Correo electrónico" />
+            </fieldset>
+            <fieldset class="w-full flex flex-col">
+              <label class="text-sm font-semibold mb-1 text-gray-500" for="password">Contraseña</label>
+              <input class="w-full border-2 border-gray-300 rounded-xl p-3" id="password"
+                     placeholder="Crea una contraseña" type="password" />
+            </fieldset>
+            <fieldset class="w-full flex flex-col">
+              <label class="text-sm font-semibold mb-1 text-gray-500" for="birthdate">Fecha de nacimiento</label>
+              <input class="w-full border-2 border-gray-300 rounded-xl p-3" id="birthdate" type="date" />
+            </fieldset>
+            <div class="w-full flex flex-col justify-center items-center gap-2 mt-4">
+              <Button class="w-full py-2">Continuar</Button>
+              <div class="font-bold text-sm">O</div>
+              <button class="w-full border-2 rounded-full px-4 py-2 font-semibold flex justify-center gap-4 items-center"><GoogleIcon class="size-6"/> Continuar con Google</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <div class="text-center text-xs p-5 text-gray-500">
+            <p class="max-w-[17rem] mx-auto">Al continuar, aceptas las <a class="font-bold text-gray-800">Condiciones de servicio</a> de Clonterest y reconoces que leíste nuestra <a class="font-bold text-gray-800">Política
+              de privacidad</a></p>
+            <a class="font-bold text-gray-800">Aviso de recopilación de información</a>
+            <p class="mt-2">¿Ya eres miembro? <a class="font-bold text-gray-800">Iniciar sesión</a></p>
+          </div>
+          <div class="bg-gray-200 p-4 py-5 text-center rounded-b-3xl">
+            <a class="font-semibold">Crea una cuenta para empresa gratuita</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-white w-full p-3 text-center font-semibold text-sm mt-5">
+    Para temas educativos solamente.
+  </footer>
+</section>

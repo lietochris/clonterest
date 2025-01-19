@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import Favorites from "./images/favorites.png";
-import Button from "../../../shared/ui/button/Button.astro";
+import Link from "../../../shared/ui/link/Link.astro";
 ---
 <section class="bg-teal-100 h-screen flex justify-center items-center">
   <div class="container px-5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center">
     <div class="text-teal-800 text-center flex flex-col justify-start items-center gap-4 order-2 lg:order-1">
       <h2 class="font-bold text-3xl lg:text-6xl max-w-lg">Guarda las ideas que te gusten</h2>
       <p class="text-lg lg:text-2xl max-w-sm">Recopila tus favoritos para volver a verlos después.</p>
-      <Button href="#">Explorar</Button>
+      <Link href="#">Explorar</Link>
     </div>
     <div class="order-1 lg:order-2">
       <Image class="w-full max-w-xs md:max-w-md xl:max-w-lg mx-auto" src={Favorites} alt="collage" />
