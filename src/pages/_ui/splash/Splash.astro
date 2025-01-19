@@ -13,39 +13,115 @@ import Verano10 from "./images/verano-10.png";
 import Verano11 from "./images/verano-11.png";
 import Verano12 from "./images/verano-12.png";
 import Verano13 from "./images/verano-13.png";
+
+import Comida1 from "./images/comida-1.png";
+import Comida2 from "./images/comida-2.png";
+import Comida3 from "./images/comida-3.png";
+import Comida4 from "./images/comida-4.png";
+import Comida5 from "./images/comida-5.png";
+import Comida6 from "./images/comida-6.png";
+import Comida7 from "./images/comida-7.png";
+import Comida8 from "./images/comida-8.png";
+import Comida9 from "./images/comida-9.png";
+import Comida10 from "./images/comida-10.png";
+import Comida11 from "./images/comida-11.png";
+import Comida12 from "./images/comida-12.png";
+import Comida13 from "./images/comida-13.png";
 import Collage from "./Collage.astro";
 ---
 
+<script src="./splashAnimation.ts" />
+
 <section class="h-screen pt-16 overflow-hidden relative">
+  <div class="container mx-auto relative">
     <Collage subtitle="idea de atuendos de verano" color="#3b82f6">
-        <div class="flex flex-col gap-4">
-            <CollageImage src={Verano1} />
-            <CollageImage src={Verano2} />
-          </div>
-          <div class="flex flex-col gap-4 mt-16">
-            <CollageImage src={Verano3} />
-            <CollageImage src={Verano4} />
-          </div>
-          <div class="flex flex-col gap-4 mt-32">
-            <CollageImage src={Verano5} />
-            <CollageImage src={Verano6} />
-          </div>
-          <div class="flex flex-col gap-4 mt-64">
-            <CollageImage src={Verano7} />
-          </div>
-          <div class="flex flex-col gap-4 mt-32">
-            <CollageImage src={Verano8} />
-            <CollageImage src={Verano9} />
-          </div>
-          <div class="flex flex-col gap-4 mt-16">
-            <CollageImage src={Verano10} />
-            <CollageImage src={Verano11} />
-          </div>
-          <div class="flex flex-col gap-4">
-            <CollageImage src={Verano12} />
-            <CollageImage src={Verano13} />
-          </div>
+      <div class="flex flex-col gap-4">
+        <CollageImage src={Verano1} />
+        <CollageImage src={Verano2} />
+      </div>
+      <div class="flex flex-col gap-4 mt-16">
+        <CollageImage src={Verano3} />
+        <CollageImage src={Verano4} />
+      </div>
+      <div class="flex flex-col gap-4 mt-32">
+        <CollageImage src={Verano5} />
+        <CollageImage src={Verano6} />
+      </div>
+      <div class="flex flex-col gap-4 mt-64">
+        <CollageImage src={Verano7} />
+      </div>
+      <div class="flex flex-col gap-4 mt-32">
+        <CollageImage src={Verano8} />
+        <CollageImage src={Verano9} />
+      </div>
+      <div class="flex flex-col gap-4 mt-16">
+        <CollageImage src={Verano10} />
+        <CollageImage src={Verano11} />
+      </div>
+      <div class="flex flex-col gap-4">
+        <CollageImage src={Verano12} />
+        <CollageImage src={Verano13} />
+      </div>
     </Collage>
+    <Collage subtitle="idea para una cena especial" color="#eab308">
+      <div class="flex flex-col gap-4">
+        <CollageImage src={Comida1} />
+        <CollageImage src={Comida2} />
+      </div>
+      <div class="flex flex-col gap-4 mt-16">
+        <CollageImage src={Comida3} />
+        <CollageImage src={Comida4} />
+      </div>
+      <div class="flex flex-col gap-4 mt-32">
+        <CollageImage src={Comida5} />
+        <CollageImage src={Comida6} />
+      </div>
+      <div class="flex flex-col gap-4 mt-64">
+        <CollageImage src={Comida7} />
+      </div>
+      <div class="flex flex-col gap-4 mt-32">
+        <CollageImage src={Comida8} />
+        <CollageImage src={Comida9} />
+      </div>
+      <div class="flex flex-col gap-4 mt-16">
+        <CollageImage src={Comida10} />
+        <CollageImage src={Comida11} />
+      </div>
+      <div class="flex flex-col gap-4">
+        <CollageImage src={Comida12} />
+        <CollageImage src={Comida13} />
+      </div>
+    </Collage>
+    <Collage subtitle="proyecto de bricolaje" color="#407a57">
+      <div class="flex flex-col gap-4">
+        <CollageImage src={Verano1} />
+        <CollageImage src={Verano2} />
+      </div>
+      <div class="flex flex-col gap-4 mt-16">
+        <CollageImage src={Verano3} />
+        <CollageImage src={Verano4} />
+      </div>
+      <div class="flex flex-col gap-4 mt-32">
+        <CollageImage src={Verano5} />
+        <CollageImage src={Verano6} />
+      </div>
+      <div class="flex flex-col gap-4 mt-64">
+        <CollageImage src={Verano7} />
+      </div>
+      <div class="flex flex-col gap-4 mt-32">
+        <CollageImage src={Verano8} />
+        <CollageImage src={Verano9} />
+      </div>
+      <div class="flex flex-col gap-4 mt-16">
+        <CollageImage src={Verano10} />
+        <CollageImage src={Verano11} />
+      </div>
+      <div class="flex flex-col gap-4">
+        <CollageImage src={Verano12} />
+        <CollageImage src={Verano13} />
+      </div>
+    </Collage>
+  </div>
 
   <div class="absolute bottom-0 w-full">
     <div class="h-32 bg-gradient-to-b from-transparent to-white grid place-items-center">
@@ -63,7 +139,7 @@ import Collage from "./Collage.astro";
       </a>
     </div>
     <div class="bg-yellow-200 p-4 flex justify-center items-center gap-2">
-      <span class="font-semibold text-lg"> Aqui te mostramos cómo funciona </span>
+      <span class="font-semibold text-lg">Aqui te mostramos cómo funciona</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
