@@ -1,9 +1,10 @@
 ---
 import {Image} from "astro:assets";
 import SearchImage from "./images/search-image.png"
+
 ---
 
-<section class="bg-yellow-200 h-[calc(100dvh-64px)] grid place-items-center">
+<section class="bg-yellow-200 h-screen grid place-items-center">
     <div class="container grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto p-5 place-items-center">
         <a href="/public" class="">
             <Image src={SearchImage} alt="Collage de imagenes sobre comida" class="md:max-w-md xl:max-w-xl"}/>
@@ -20,4 +21,4 @@ import SearchImage from "./images/search-image.png"
             </a>
         </div>
     </div>
-</section>
+</Container>

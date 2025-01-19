@@ -1,65 +1,79 @@
 ---
-import SplashDataset from "./splashDataset";
 import CollageImage from "./CollageImage.astro";
+import Verano1 from "./images/verano-1.png";
+import Verano2 from "./images/verano-2.png";
+import Verano3 from "./images/verano-3.png";
+import Verano4 from "./images/verano-4.png";
+import Verano5 from "./images/verano-5.png";
+import Verano6 from "./images/verano-6.png";
+import Verano7 from "./images/verano-7.png";
+import Verano8 from "./images/verano-8.png";
+import Verano9 from "./images/verano-9.png";
+import Verano10 from "./images/verano-10.png";
+import Verano11 from "./images/verano-11.png";
+import Verano12 from "./images/verano-12.png";
+import Verano13 from "./images/verano-13.png";
+import Collage from "./Collage.astro";
 ---
-<section class="h-[calc(100dvh-64px)] overflow-y-hidden">
-    {SplashDataset.map(item => (
-            <div class={`splash-${item.id} h-full place-items-center relative overflow-hidden`} style="display: none;">
-                <div class={`splash-collage absolute grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 -bottom-64 lg:-bottom-80 2xl:-bottom-64 -ml-5 -mr-5`}>
-                    <div class={`splash-column-${item.id} hidden lg:flex flex-col gap-4`}>
-                        {item["col-1"].map(image => (
-                                <CollageImage src={image}/>
-                        ))}
-                    </div>
-                    <div class={`splash-column-${item.id} flex flex-col gap-4 mt-20`}>
-                        {item["col-2"].map(image => (
-                                <CollageImage src={image}/>
-                        ))}
-                    </div>
-                    <div class={`splash-column-${item.id} hidden md:flex flex-col gap-4 mt-32`}>
-                        {item["col-3"].map(image => (
-                                <CollageImage src={image}/>
-                        ))}
-                    </div>
-                    <div class={`splash-column-${item.id} flex flex-col gap-4 mt-20`}>
-                        {item["col-4"].map(image => (
-                                <CollageImage src={image}/>
-                        ))}
-                    </div>
-                    <div class={`splash-column-${item.id} hidden lg:flex flex-col gap-4`}>
-                        {item["col-5"].map(image => (
-                                <CollageImage src={image}/>
-                        ))}
-                    </div>
-                </div>
 
+<section class="h-screen pt-16 overflow-hidden relative">
+    <Collage subtitle="idea de atuendos de verano" color="#3b82f6">
+        <div class="flex flex-col gap-4">
+            <CollageImage src={Verano1} />
+            <CollageImage src={Verano2} />
+          </div>
+          <div class="flex flex-col gap-4 mt-16">
+            <CollageImage src={Verano3} />
+            <CollageImage src={Verano4} />
+          </div>
+          <div class="flex flex-col gap-4 mt-32">
+            <CollageImage src={Verano5} />
+            <CollageImage src={Verano6} />
+          </div>
+          <div class="flex flex-col gap-4 mt-64">
+            <CollageImage src={Verano7} />
+          </div>
+          <div class="flex flex-col gap-4 mt-32">
+            <CollageImage src={Verano8} />
+            <CollageImage src={Verano9} />
+          </div>
+          <div class="flex flex-col gap-4 mt-16">
+            <CollageImage src={Verano10} />
+            <CollageImage src={Verano11} />
+          </div>
+          <div class="flex flex-col gap-4">
+            <CollageImage src={Verano12} />
+            <CollageImage src={Verano13} />
+          </div>
+    </Collage>
 
-                <div class={`flex flex-col font-semibold text-center gap-5 z-10 mb-96`}>
-                    <h2 class="text-5xl lg:text-6xl 2xl:text-7xl">Descubre tu próxima</h2>
-                    <h3 class={`splash-text-${item.id} text-4xl lg:text-6xl 2xl:text-7xl`}
-                        style={`color: ${item.color}`}>{item.title}</h3>
-                </div>
-            </div>
-    ))}
-    <div class="absolute bottom-0 w-full">
-        <div class="h-32 bg-gradient-to-b from-transparent to-white grid place-items-center">
-            <a href="" class="animate-bounce size-12 bg-emerald-700 grid place-items-center rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                     stroke="currentColor" class="size-8 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
-                </svg>
-            </a>
-        </div>
-        <div class="bg-yellow-200 p-4 flex justify-center items-center gap-2">
-            <span class="font-semibold text-lg">
-            Aqui te mostramos cómo funciona
-            </span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
-            </svg>
-        </div>
+  <div class="absolute bottom-0 w-full">
+    <div class="h-32 bg-gradient-to-b from-transparent to-white grid place-items-center">
+      <a href="" class="animate-bounce size-12 bg-emerald-700 grid place-items-center rounded-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-8 text-white"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+        </svg>
+      </a>
     </div>
+    <div class="bg-yellow-200 p-4 flex justify-center items-center gap-2">
+      <span class="font-semibold text-lg"> Aqui te mostramos cómo funciona </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-5"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+      </svg>
+    </div>
+  </div>
 </section>
-
-<script src="./splashAnimation.ts"></script>
